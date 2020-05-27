@@ -1,0 +1,11 @@
+﻿@using CodeFirstExercise.Context;
+
+@model IEnumerable<CodeFirstExercise.Context.TrapSample>
+
+@foreach(CodeFirstExercise.Context.TrapSample t in Model)
+{
+    <p>@t.Id</p>
+    <p>Location: @t.Location</p>
+    <p>Collector: @t.Collector</p>
+    <p>Analyst: @t.Analyst</p>
+}
